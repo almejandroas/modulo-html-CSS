@@ -169,6 +169,29 @@ th {
     outline-offset: 2px;
 }
 
+.whatsapp{
+    position: fixed;
+    bottom: var(--espacio-lg);
+    right: var(--espacio-md);
+    background-color: var(--verde-ruta);
+    color: #FFFFFF;
+    padding: var(--espacio-sm);
+    border-radius: 8px;
+    text-decoration: none;
+    z-index: 1000;
+}
+
+.etiqueta {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #F39A2B;
+    color: #030303;
+    padding: 0.2rem 0.5rem;
+    border-radius: var(--radio);
+    
+}
+
 .cta-boton {
     display: inline-block;
     background-color: var(--botones--enlaces);
@@ -194,6 +217,7 @@ th {
     padding: 10px;
     margin: var(--espacio-lg);              
     transition: transform 0.2s ease; 
+    position: relative;
 }
 
 .flet-grid {

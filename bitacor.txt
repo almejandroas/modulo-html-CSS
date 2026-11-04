@@ -32,7 +32,7 @@ Hallazgos de accesibilidad:
 
 Esquema de regiones
 
-[DOCUMENTO: html lang="es"]
+[:index.html html lang="es"]
 │
 ├── [REGIÓN: HEADER]
 │   ├── Título del sitio (H1: Rueda libre)
@@ -74,7 +74,57 @@ Esquema de regiones
     └── Párrafo con nombre de la marca, correo de soporte y año (2016)
 
 
+    Reservas.html
+     [BODY] (Cuerpo de la página)
+ ├──  [HEADER] (Encabezado principal)
+ │    ├──  <h1> Título: "Reserva tu Bicicleta"
+ │    └──  [NAV] Barra de navegación (#menu)
+ │
+ ├──  [MAIN] (Contenido principal de la página)
+ │    │
+ │    ├──  [SECTION id="direccion"] (Contenedor Grid 2:1 principal)
+ │    │    │
+ │    │    ├──  [DIV class="juntar"] (Columna Izquierda: Formulario)
+ │    │    │    └──  [FORM class="formulario"]
+ │    │    │         ├──  [FIELDSET] Datos personales (Nombre y Documento en .linea, Correo, Celular)
+ │    │    │         ├──  [FIELDSET] Datos de Reserva (Fecha, Tipo de bici, Plan, Cantidad, Recorrido, Comentarios)
+ │    │    │         └──  [FIELDSET] Políticas de aceptación y Botón de envío (.cta-boton)
+ │    │    │
+ │    │    └──  [SECTION class="tarjetas-contacto"] (Columna Derecha: Contacto)
+ │    │         └──  [ARTICLE class="tarjetas"] Datos de Contacto y Teléfono/Correo
+ │    │
+ │    ├──  <h2> Título: "Horario de Atencion"
+ │    └──  [ASIDE] (Contenido complementario: Lista de horarios de atención)
+ │
+ └──  [FOOTER] (Pie de página con información de contacto y año)
 
+
+ [BODY] (Cuerpo de la página de tarifas)
+ ├──  [HEADER] (Encabezado principal)
+ │    ├──  [IMG] Logo de la empresa
+ │    ├──  <h1> Título: "Tablas de precios"
+ │    └──  [NAV] Barra de navegación (#menu)
+ │
+ ├──  [MAIN] (Contenido principal)
+ │    │
+ │    ├── [TABLE] Primera tabla: Tarifa de tipo de bicicleta por tiempo
+ │    │    ├──  [CAPTION] "Tarifa de tipo de bicicleta por tiempo"
+ │    │    ├──  [THEAD] Encabezados de columna (Tipo de bicicleta, 1 hora, Medio día, Día completo)
+ │    │    └──  [TBODY] Filas de datos (Urbana, Montaña, Eléctrica + Etiqueta "Nuevo" suelta)
+ │    │
+ │    ├──  [TABLE id="precios-de-recorridos"] Segunda tabla: Tarifa de ruta de recorrido
+ │    │    ├──  [CAPTION] "Tarifa de ruta de recorrido"
+ │    │    ├──  [THEAD] Encabezados de columna (Recorrido, Distancia, Duración, Nivel)
+ │    │    └──  [TBODY] Filas de datos (Río y Parques, Sabores de Barrio, Reto Las Palmas)
+ │    │
+ │    ├──  [P] Texto descriptivo sobre casco, candado y horarios de salida
+ │    ├──  <h2> Título: "Qué llevar:"
+ │    ├──  [ASIDE] Contenido complementario (Lista de elementos esenciales: ropa, agua, protector, documento)
+ │    └──  [A] Enlace de retorno al inicio ("Apreta acá para volver al inicio")
+ │
+ └──  [FOOTER] (Pie de página)
+      ├──  [P] "Rueda libre"
+      └──  [P] Información de contacto (correo) y año (2016)
 
 Verde Ruta: Botones y enlaces
 	
@@ -135,4 +185,7 @@ lo deseado en las otras diferentes pantallas.
 la tabla de tarifas se salia de la pantalla a los 360px, se soluciona reduciendo los pading de las celdas.
 
 Las imagenes se salían del 360px, pero se solucionan dandole un max-width de 100% y su height se acomoda en modo auto.
+
+dia 2 semana 2
+5. bostrap ayuda demasiado, pero genera confusión al inicio para saber donde aplicar las clases, pero es bueno 
 
