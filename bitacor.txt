@@ -187,5 +187,12 @@ la tabla de tarifas se salia de la pantalla a los 360px, se soluciona reduciendo
 Las imagenes se salían del 360px, pero se solucionan dandole un max-width de 100% y su height se acomoda en modo auto.
 
 dia 2 semana 2
-5. bostrap ayuda demasiado, pero genera confusión al inicio para saber donde aplicar las clases, pero es bueno 
+
+5. bostrap ayuda demasiado, pero genera confusión al inicio para saber donde aplicar las clases, pero a largo plazo, facilita el trabajo en la creaación de los estilos, porque es asignar valores ya predeterminados que genera un estilo.
+
+6. Las clases que utilice para genenerar el bostrap.
+badge = ayuda, a darle estilo y bordes a los recuadros que solo cubren el texto.
+bg-warning =  es un fondo que se genera solo a un texto y el warning es un color predeterminado.
+card = Transforma toda esa sección en un recuadro para el contenido.
+shadow-sm = Le da un sombreado sutil.
 
