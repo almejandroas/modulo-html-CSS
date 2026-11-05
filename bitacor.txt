@@ -195,4 +195,4 @@ badge = ayuda, a darle estilo y bordes a los recuadros que solo cubren el texto.
 bg-warning =  es un fondo que se genera solo a un texto y el warning es un color predeterminado.
 card = Transforma toda esa sección en un recuadro para el contenido.
 shadow-sm = Le da un sombreado sutil.
-
+small = Le da un tamaño mas sutil a los textos y titulos.
