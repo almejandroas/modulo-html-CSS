@@ -196,3 +196,8 @@ bg-warning =  es un fondo que se genera solo a un texto y el warning es un color
 card = Transforma toda esa sección en un recuadro para el contenido.
 shadow-sm = Le da un sombreado sutil.
 small = Le da un tamaño mas sutil a los textos y titulos.
+
+7. Problemas: ya no es necesaria la clase bicicletas y lo estilos que se le aplicaron, entonces se le realiza un comentario.
+los problemas que tenían las otras clases no los identifico, porque al momento de pegar todo el codigo en el catalogo de pruebas, se hizo la eliminación de las clases que no se estaban utilizando y se agregaron las del bootrap.
+
+8. con boostrap el tiempo es más reducido, encontramos que ya no es necesaria tanto tipos de clases para desarrollar la separación, se comento el grid, que en el css original era el que se encargaba de ahcer la separación e la pagina de reservas, ya que el boostrap solo con separar en columnas ya lo hace sin necesidad de poner un limite. El tiempo y utilizar boostrap mejora tu experiencia con el flex.

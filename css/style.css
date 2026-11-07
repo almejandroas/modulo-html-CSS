@@ -42,7 +42,6 @@ header {
     align-items: center;
     background-color: #F39A2B;
     padding: 0.5rem;
-    border-radius: 1rem;
     transition: transform 0.2s ease;
 }
 
@@ -53,7 +52,6 @@ footer {
     flex-wrap: wrap;
     background-color: #F39A2B;
     padding: 0.5rem;
-    border-radius: 1rem;
     transition: transform 0.2s ease;
 }
 
@@ -227,7 +225,7 @@ th {
     padding-inline: 2rem;
 }
 
-.bicicletas {
+/*.bicicletas {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -237,7 +235,7 @@ th {
     width: 100%;
     height: auto;
     object-fit: cover;
-}
+}*/
 
 article {
     display: flex;
@@ -249,17 +247,17 @@ article p {
     flex-direction: row;
 }
 
-/* Contenedor principal de reservas en medida 2:1 */
-#direccion {
+
+/* #direccion {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
     align-items: center;
-}
+} */
 
-.tarjeta-contacto{
+ .tarjeta-contacto{
     flex-wrap: wrap;
-}
+ }
 
 .portada {
     display: grid;
@@ -311,7 +309,6 @@ header {
     text-align: center;
     background-color: #F39A2B;
     padding: 1rem;
-    border-radius: 1rem;
 }
 
 #menu {
@@ -361,12 +358,12 @@ th, td {
 }
 
 /* --- ESCRITORIO (Mínimo 1200px) --- */
-@media (min-width: 1200px) {
-    /* Aquí activamos el diseño 2:1 que querías para reservas */
+/* @media (min-width: 1200px) {
+    /* Aquí activamos el diseño 2:1 que querías para reservas 
     #direccion {
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 2rem;
         align-items: start;
-    }
-}
+    } 
+}*/
