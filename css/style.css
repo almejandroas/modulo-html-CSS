@@ -195,7 +195,7 @@ th {
 
 .cta-boton {
     display: inline-block;
-    color: black;
+    color: white;
     padding: var(--espacio-md) var(--espacio-xl);
     border: none;
     border-radius: var(--radio);
