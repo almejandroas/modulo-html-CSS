@@ -201,3 +201,6 @@ small = Le da un tamaño mas sutil a los textos y titulos.
 los problemas que tenían las otras clases no los identifico, porque al momento de pegar todo el codigo en el catalogo de pruebas, se hizo la eliminación de las clases que no se estaban utilizando y se agregaron las del bootrap.
 
 8. con boostrap el tiempo es más reducido, encontramos que ya no es necesaria tanto tipos de clases para desarrollar la separación, se comento el grid, que en el css original era el que se encargaba de ahcer la separación e la pagina de reservas, ya que el boostrap solo con separar en columnas ya lo hace sin necesidad de poner un limite. El tiempo y utilizar boostrap mejora tu experiencia con el flex.
+
+12. en la semana 2 realizamos toda la integración de boostrap al proyecto, facilito por completo los estilos dentro del html, utilizando solo clases.
+aprendi que con solo saber manejar los flex que me entrega el boostrap me se defender, despues de eso es solo utilizar diferentes clases para darle una estetica más diferente a toda la web, es importante aclarar que es necesario tener un poco de nocion con el css, para saber uqe cambios minimos hay que hacer para acomodarlo al propio estilo de tu web, utilizando el framework. desarrollar primero para mobile es una estrategia muy viable para ir moviendose poco a poco dentro de los estilos de la web.

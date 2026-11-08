@@ -366,26 +366,25 @@ th, td {
     } 
 }*/
 
-#modalPoliticas {
+#politicas {
     .modal-header {
-        background-color: var();
-        border-bottom-color: var();
+        background-color: var(--naranja--pedal);
+        border-bottom-color: var(--naranja--pedal);
     }
     .modal-title {
-        color: var(--blanco);
+        color: var(--titulos--encabezados);
         background-color: transparent;
     }
     .btn-close {
         filter: invert(1) grayscale(100%) brightness(200%);
     }
     .modal-content {
-        --bs-modal-bg: var();
-        --bs-modal-color: var();
-        --bs-modal-border-color: var();
+        --bs-modal-bg: var(--fondo--general);
+        --bs-modal-color: var(--titulos--encabezados);
     }
     .btn{
-        background-color: var();
-        color: var();
+        background-color: var(--botones--enlaces);
+        color: var(--fondo--general);
         border:none;
     }
 }
