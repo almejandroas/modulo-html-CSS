@@ -24,13 +24,13 @@
     <div class="collapse navbar-collapse " id="menu">
       <ul class="navbar-nav ms-auto ">
         <li class="nav-item">
-          <button type="button" class=" btn btn-sm cta-boton"><a class="nav-link active btn btn-lg" aria-current="page" href="reservas.html">Reservas</a></button>
+          <button type="button" class=" btn btn-sm"><a class="nav-link active btn btn-lg" aria-current="page" href="reservas.html">Reservas</a></button>
         </li>
         <li class="nav-item">
-          <button type="button" class=" btn btn-sm cta-boton"><a class="nav-link btn btn-sm" href="tarifas.html">Tarifa</a></button>
+          <button type="button" class=" btn btn-sm "><a class="nav-link btn btn-sm" href="tarifas.html">Tarifa</a></button>
         </li>
         <li class="nav-item">
-          <button type="button" class=" btn btn-sm cta-boton"><a class="nav-link" href="../index.html">Inicio</a></button>
+          <button type="button" class=" btn btn-sm "><a class="nav-link" href="../index.html">Inicio</a></button>
         </li>
       </ul>
     </div>
@@ -39,50 +39,65 @@
     </header>
 
     <main>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+           Recuerda que es super importante <strong>TRAER EL DOCUMENTO</strong> al momento de recoger la bicicleta.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-8">
                 <section id="direccion">
-                        <form action="" method="post" class="formulario">
+                        <form action="" method="post" class="formulario needs-validation was-validated" novalidate>
                             <fieldset>
                                 <legend>Tus datos</legend>
                                 <section class = "linea">
-                                    <div class="campo">
-                                    <p><label for="nombre">Nombre completo:</label></p>
-                                    <input type="text" id="nombre" name="nombre" minlength="3" required>  
-                                    </div>
-                                    <div class="campo">
-                                    <p><label for="identificacion">Numero de documento: </label></p>
-                                    <input type="text" id="identificacion" name="identificacion" pattern="[0-9]{6,10}" required>
+                                    <div>
+                                        <label for="nombre" class ="form-label">Nombre completo:</label>
+                                        <input type="text" id="nombre"  class ="form-control" name="nombre" minlength="3" required> 
+                                        <div class="invalid-feedback">Ingrese su nombre completo para continuar.</div>
+                                        </div>
+                                    <div>
+                                        <p><label for="identificacion" class ="form-label">Numero de documento: </label></p>
+                                        <input type="text" id="identificacion"  class ="form-control" name="identificacion" pattern="[0-9]{6,10}" required>
+                                        <div class ="invalid-feedback">Ingresa tu número de documento</div>
                                     </div>
                                 </section>
                                 
-                                <p><label for="correo">Correo electrónico:</label></p>
-                                <input type="email" id="correo" name="correo" required>
+                                <label for="correo" class ="form-label" >Correo electrónico:</label>
+                                <input type="email" id="correo" class ="form-control" name="correo" required>
+                                <div class = "invalid-feedback"> Ingresa tu correo electronico</div>
                                 
-                                <p><label for="celular">Celular:</label></p>
-                                <input type="tel" id="celular" name="telefono" pattern="3[0-9]{9}" required>    
+                                <label for="celular" class ="form-label">Celular:</label>
+                                <input type="tel" id="celular" class ="form-control" name="telefono" pattern="3[0-9]{9}" required>  
+                                <div class ="invalid-feedback"> Ingresa un numero de celular valido  que comience por 3</div>  
                             </fieldset>
 
                             <fieldset>
                                 <legend>Reserva</legend>
-                                <p><label for="fecha">Fecha de reserva:</label></p>
-                                <input type="date" id="fecha" name="fecha" min="2026-11-01" max="2026-12-31" required>
-                                
-                                <p><label>Tipo de bicicleta:</label></p>
-                                <p><input type="radio" id="bici-urbana" name="bicicleta" value="urbana" required> Urbana</p>
-                                <p><input type="radio" id="bici-montana" name="bicicleta" value="montaña" required> Montaña</p>
-                                <p><input type="radio" id="bici-electrica" name="bicicleta" value="eléctrica" required> Eléctrica</p>
-                                
-                                <p><label>Plan:</label></p>
-                                <p><input type="radio" id="plan-hora" name="plan" value="hora" required> 1 hora</p>
-                                <p><input type="radio" id="plan-medio" name="plan" value="medio" required> medio día</p>
-                                <p><input type="radio" id="plan-completo" name="plan" value="completo" required> día completo</p>
-                                
-                                <p><label for="cantidad">¿Cantidad de bicicletas?:</label></p>
-                                <input type="number" id="cantidad" name="cantidad" min="1" max="6" required>
-                                
-                                <p><label for="recorrido">Recorrido guiado:</label></p>
+                                <p><label for="fecha" class ="form-label">Fecha de reserva:</label></p>
+                                <input type="date" class = "form-control" id="fecha" name="fecha" min="2026-11-01" max="2026-12-31" required>
+                                <div class="invalid-feedback">Es necesario colocar la fecha de reserva</div>
+                                <div>
+                                    <label class ="form-label">Tipo de bicicleta:</label></p>
+                                    <input type="radio" id="bici-urbana" name="bicicleta"  class = "form-check-input" value="urbana" required> Urbana
+                                    <input type="radio" id="bici-montana" name="bicicleta" class = "form-check-input"  value="montaña" required> Montaña
+                                    <input type="radio" id="bici-electrica" name="bicicleta" class = "form-check-input"  value="eléctrica" required> Eléctrica
+                                    <div class="invalid-feedback">Selecciona el tipo de bicicleta</div>
+                                </div>
+                                <div>
+                                    <label class ="form-label">Plan:</label></p>
+                                    <input type="radio" id="plan-hora" name="plan" class="form-check-input" value="hora" required> 1 hora
+                                    <input type="radio" id="plan-medio" name="plan" class="form-check-input" value="medio" required> medio día
+                                    <input type="radio" id="plan-completo" name="plan" class="form-check-input"  value="completo" required> día completo
+                                    <div class = "invalid-feedback"> Selecciona el plan de tiempo</div>
+                                </div>
+
+                                <div>
+                                    <label for="cantidad" class ="form-label">¿Cantidad de bicicletas?:</label></p>
+                                    <input type="number" id="cantidad" class ="form-control" name="cantidad" min="1" max="6" required>
+                                    <div class="invalid-feedback"> Tienes que colocar una cantidad</div>
+                                </div>
+                                <p><label for="recorrido" class ="form-label">Recorrido guiado:</label></p>
                                 <select id="recorrido" name="recorrido" required>
                                     <option value="ninguno">Ninguno</option>
                                     <option value="rio">rio y parques</option>
@@ -90,18 +105,49 @@
                                     <option value="reto">Reto Palmas</option>  
                                 </select>
                                 
-                                <p><label for="comentarios">Comentarios:</label></p>
+                                <p><label for="comentarios" class ="form-label">Comentarios:</label></p>
                                 <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
                             </fieldset>
 
                             <fieldset> 
                                 <legend>Politicas de aceptación y confirmación</legend>
-                                <p><label>Acepto los términos y condiciones</label></p>
-                                <p><input type="radio" id="aceptacion" name="aceptacion" value="acepto" required> Sí, acepto</p>
+                                <p><label class ="form-label">Acepto los términos y condiciones</label></p>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6">
+                                            <p><input type="radio" id="aceptacion" name="aceptacion" value="acepto" required> Sí, acepto</p>
+                                        </div>
+                                        <div class="col-12 col-lg-6 me-auto">
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver Políticas</button>
+                                        </div>
+                                    </div>
+                                </div>
                                 <button type="submit" class="cta-boton">Reserva ahora</button>
                             </fieldset>
                             <p>En este lugar puedes realizar tus reservas</p>
                         </form>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Politicas de Alquiler</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ol>
+                                            <li class="py-2" >Presenta tu documento de identidad original al recoger la bicicleta.</li>
+                                            <li class="py-2" >Revisa la bicicleta con el asesor antes de salir.</li>
+                                            <li class="py-2" >Cada 15 minutos de retraso en la devolución tienen un recargo de $5.000.</li>
+                                            <li class="py-2" >Los daños por mal uso se cobran según el costo de la reparación.</li>
+                                            <li class="py-2" >Los menores de edad deben estar acompañados por un adulto responsable.</li>
+                                        </ol>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
                 </section>
             </div>
 
@@ -118,12 +164,12 @@
         </div>
 
                 
-                    <section class = "container card vw-100  bg-success">
-                        <div class = "row justify-content-center">
+                    <section class = "container card vw-100">
+                        <div class = "row">
                             <div class = "col-12 col-lg-6">
                                 <h2 class ="fw-bold">Horario de Atencion</h2>
                             </div>
-                            <div class = "col-12 col-lg-6">
+                            <div class = "col-12 col-lg-6 me-auto">
                                 <aside aria-label="contenido complementario">
                                     <ul>
                                         <li>Lunes a viernes: 7:00 a. m. a 7:00 p. m.</li>

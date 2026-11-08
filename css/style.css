@@ -3,6 +3,7 @@
     --titulos--encabezados: #14213D;
     --fondo--general: #FAF6EF;
     --texto--secundario: #5B6470;
+    --naranja--pedal:#F39A2B;
     --fuente--titulos: 'Montserrat', sans-serif;
     --fuente--texto: 'Open Sans', sans-serif;
     
@@ -158,15 +159,11 @@ th {
 .formulario input:not([type="radio"]):not([type="checkbox"]):focus,
 .formulario select:focus,
 .formulario textarea:focus {
-    outline: 3px solid var(--botones--enlaces);
-    outline-offset: 2px;
-    border-color: var(--botones--enlaces);
     background-color: #fff;
 }
 
 .formulario input[type="radio"]:focus,
 .formulario input[type="checkbox"]:focus {
-    outline: 3px solid var(--botones--enlaces);
     outline-offset: 2px;
 }
 
@@ -195,14 +192,14 @@ th {
 
 .cta-boton {
     display: inline-block;
-    color: white;
+    color: var(--fondo--general);
     padding: var(--espacio-md) var(--espacio-xl);
     border: none;
     border-radius: var(--radio);
     text-decoration: none;
     cursor: pointer;
     text-align: center;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    background-color: var(--botones--enlaces);
 }
 
 .cta-boton:hover {
@@ -368,3 +365,27 @@ th, td {
         align-items: start;
     } 
 }*/
+
+#modalPoliticas {
+    .modal-header {
+        background-color: var();
+        border-bottom-color: var();
+    }
+    .modal-title {
+        color: var(--blanco);
+        background-color: transparent;
+    }
+    .btn-close {
+        filter: invert(1) grayscale(100%) brightness(200%);
+    }
+    .modal-content {
+        --bs-modal-bg: var();
+        --bs-modal-color: var();
+        --bs-modal-border-color: var();
+    }
+    .btn{
+        background-color: var();
+        color: var();
+        border:none;
+    }
+}
