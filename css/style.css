@@ -30,44 +30,47 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
     color: var(--titulos--encabezados);
 }
 
-main, header, footer {
+ main, /*header,*/ footer { 
     max-width: 100%;
     margin: 0 auto;
     padding: var(--espacio-md);
 }
 
-header {
+header{
+    background-color: #F39A2B;
+}
+
+/* header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #F39A2B;
     padding: 0.5rem;
     transition: transform 0.2s ease;
-}
+} */
 
 footer {
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-start;
     flex-wrap: wrap;
     background-color: #F39A2B;
     padding: 0.5rem;
     transition: transform 0.2s ease;
 }
 
-#menu {
+/* #menu {
     display: flex;
     gap: 1.5rem;
     flex-wrap: wrap;
-}
+} */
 
-#menu a { 
+/* #menu a { 
     color: var(--texto--secundario); 
     transition: all 0.3s ease;
     text-decoration: none;
-}
+} */
 
-#menu a.activo,
+/* #menu a.activo, */
 #menu a:hover,
 #menu a:focus { 
     color: var(--botones--enlaces); 
@@ -192,7 +195,6 @@ th {
 
 .cta-boton {
     display: inline-block;
-    background-color: var(--botones--enlaces);
     color: black;
     padding: var(--espacio-md) var(--espacio-xl);
     border: none;
@@ -204,7 +206,7 @@ th {
 }
 
 .cta-boton:hover {
-    background-color: #14532d; 
+    background-color:var(--titulos--encabezados); 
     transform: scale(1.05); 
 }
 
@@ -302,16 +304,15 @@ img {
 }
 
 /* ESTILOS BASE (Móvil: Menú debajo y centrado) */
-header {
+/* header {
     display: flex;
-    flex-direction: column;
     align-items: center;
     text-align: center;
     background-color: #F39A2B;
     padding: 1rem;
-}
+} */
 
-#menu {
+/* #menu {
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -319,12 +320,12 @@ header {
     padding: 0;
     margin-top: 0.5rem;
     list-style: none;
-}
+} */
 
 /* TABLET Y ESCRITORIO (Desde 768px en adelante) */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     header {
-        flex-direction: row; /* Vuelve a estar lado a lado */
+        flex-direction: row; /* Vuelve a estar lado a lado 
         justify-content: space-between;
         align-items: center;
     }
@@ -332,7 +333,7 @@ header {
     #menu {
         margin-top: 0;
     }
-}
+} */
 
 /* Estilos base móviles para las tablas */
 table {
